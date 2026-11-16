@@ -1,0 +1,1379 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>American Institute of English Language PVT. LTD. | Spoken English & Personality Development in Lucknow</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Crisp Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brandMaroon: '#8B0000',
+                        brandRed: '#B71C1C',
+                        brandBrightRed: '#D32F2F',
+                        brandSlate: '#585B60',
+                        brandGold: '#F5B800',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom animations & refined visual details */
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #1f2937;
+            background-color: #ffffff;
+            overflow-x: hidden;
+        }
+
+        /* Carousel Smooth Transition */
+        .carousel-track {
+            transition: transform 0.55s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        /* Poster Wave & Overlay Styling */
+        .poster-card {
+            box-shadow: 0 10px 28px -5px rgba(0, 0, 0, 0.12), 0 4px 10px -4px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .poster-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 18px 36px -6px rgba(139, 0, 0, 0.18);
+        }
+
+        /* Floating WhatsApp Pulse */
+        @keyframes pulseGreen {
+            0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.55); }
+            70% { box-shadow: 0 0 0 14px rgba(37, 211, 102, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+        }
+        .whatsapp-pulse {
+            animation: pulseGreen 2.2s infinite;
+        }
+
+        /* Custom subtle dotted background accent like in the video */
+        .dotted-accent {
+            background-image: radial-gradient(#d1d5db 1.5px, transparent 1.5px);
+            background-size: 14px 14px;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-brandMaroon selection:text-white">
+
+    <!-- ========================================================= -->
+    <!-- 1. TOP UTILITY BAR (#8B0000 Deep Burgundy/Maroon)         -->
+    <!-- ========================================================= -->
+    <div class="bg-[#8B0000] text-white text-xs sm:text-[13px] py-2.5 px-4 sm:px-8 border-b border-red-950/40">
+        <div class="max-w-[1360px] mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <!-- Left Help Desk -->
+            <div class="flex items-center space-x-2 font-medium tracking-wide">
+                <a href="tel:+919794161828" class="flex items-center gap-2 hover:text-amber-300 transition">
+                    <span class="bg-white/15 p-1 rounded-full">
+                        <i class="fa-solid fa-phone text-[11px]"></i>
+                    </span>
+                    <span>HELP DESK : <strong class="font-bold">+91 9794161828</strong></span>
+                </a>
+            </div>
+
+            <!-- Right Enquiry Links -->
+            <div class="flex flex-wrap items-center justify-center gap-x-4 gap-y-1 text-white/95">
+                <button onclick="openBookingModal('Direct Seat Enquiry')" class="font-extrabold uppercase tracking-wider text-white hover:text-amber-300 transition cursor-pointer">
+                    ENQUIRY NOW :
+                </button>
+                <a href="#admission-process" class="hover:text-amber-300 transition font-medium">Admission Process</a>
+                <span class="text-white/40 hidden sm:inline">|</span>
+                <button onclick="openBookingModal('Connect With Us')" class="hover:text-amber-300 transition font-medium cursor-pointer">Connect With Us</button>
+                <span class="text-white/40 hidden sm:inline">|</span>
+                <a href="#contact" class="hover:text-amber-300 transition font-medium">Visit Us</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================================================= -->
+    <!-- 2. STICKY MAIN NAVIGATION HEADER                          -->
+    <!-- ========================================================= -->
+    <header class="sticky top-0 z-40 bg-white shadow-[0_2px_15px_rgba(0,0,0,0.06)]">
+        <div class="max-w-[1360px] mx-auto px-4 sm:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Crest Logo + Institute Title -->
+            <a href="#home" class="flex items-center gap-3 group focus:outline-none">
+                <!-- Custom SVG Red & Black Crest Monogram Logo -->
+                <div class="w-12 h-12 sm:w-14 sm:h-14 flex-shrink-0 transition-transform duration-300 group-hover:scale-105">
+                    <svg viewBox="0 0 100 110" class="w-full h-full drop-shadow-sm" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Outer Shield -->
+                        <path d="M10 10 H90 V55 C90 82 50 102 50 102 C50 102 10 82 10 55 Z" fill="#FFFFFF" stroke="#991B1B" stroke-width="5"/>
+                        <!-- Inner Shield Border -->
+                        <path d="M17 17 H83 V53 C83 75 50 93 50 93 C50 93 17 75 17 53 Z" fill="none" stroke="#111827" stroke-width="2.5"/>
+                        <!-- Top Red Ribbon Header -->
+                        <path d="M17 17 H83 V31 H17 Z" fill="#991B1B"/>
+                        <text x="50" y="27" text-anchor="middle" fill="#FFFFFF" font-size="9" font-weight="800" font-family="Inter, sans-serif" letter-spacing="1.5">AIEL</text>
+                        <!-- Bold Monogram "AI" -->
+                        <text x="50" y="66" text-anchor="middle" fill="#991B1B" font-size="31" font-weight="900" font-family="Inter, sans-serif" letter-spacing="-1">AI</text>
+                        <!-- Bottom Stars -->
+                        <circle cx="38" cy="78" r="2.2" fill="#111827"/>
+                        <circle cx="50" cy="81" r="2.6" fill="#991B1B"/>
+                        <circle cx="62" cy="78" r="2.2" fill="#111827"/>
+                    </svg>
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-sm sm:text-base lg:text-[17px] font-extrabold text-gray-900 leading-tight tracking-tight">
+                        American Institute of English Language
+                    </span>
+                    <span class="text-[11px] sm:text-xs font-bold text-[#991B1B] tracking-widest uppercase">
+                        PVT. LTD. • LUCKNOW
+                    </span>
+                </div>
+            </a>
+
+            <!-- Desktop Navigation Links -->
+            <nav class="hidden xl:flex items-center space-x-7 text-[15px] font-semibold text-gray-800">
+                <a href="#home" class="text-[#991B1B] hover:text-[#8B0000] transition">Home</a>
+                <a href="#about" class="hover:text-[#991B1B] transition">About Us</a>
+                <a href="#admission-process" class="hover:text-[#991B1B] transition">Admission</a>
+                <a href="#courses" class="hover:text-[#991B1B] transition">Offered Courses</a>
+                <a href="#what-you-learn" class="hover:text-[#991B1B] transition">Gallery</a>
+                <a href="#why-learn" class="hover:text-[#991B1B] transition">Career</a>
+                <a href="#leadership" class="hover:text-[#991B1B] transition">Leadership</a>
+                <a href="#contact" class="hover:text-[#991B1B] transition">Contact Us</a>
+            </nav>
+
+            <!-- Mobile Hamburger Button -->
+            <button id="mobile-menu-btn" aria-label="Toggle Menu" class="xl:hidden p-2.5 rounded-lg text-gray-800 hover:bg-gray-100 focus:outline-none">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Dropdown Drawer -->
+        <div id="mobile-menu" class="hidden xl:hidden bg-white border-t border-gray-100 px-6 py-4 space-y-3 shadow-lg">
+            <a href="#home" class="block py-2 font-semibold text-[#991B1B]" onclick="closeMobileMenu()">Home</a>
+            <a href="#about" class="block py-2 font-semibold text-gray-800 hover:text-[#991B1B]" onclick="closeMobileMenu()">About Us</a>
+            <a href="#admission-process" class="block py-2 font-semibold text-gray-800 hover:text-[#991B1B]" onclick="closeMobileMenu()">Admission</a>
+            <a href="#courses" class="block py-2 font-semibold text-gray-800 hover:text-[#991B1B]" onclick="closeMobileMenu()">Offered Courses</a>
+            <a href="#what-you-learn" class="block py-2 font-semibold text-gray-800 hover:text-[#991B1B]" onclick="closeMobileMenu()">Gallery</a>
+            <a href="#why-learn" class="block py-2 font-semibold text-gray-800 hover:text-[#991B1B]" onclick="closeMobileMenu()">Career</a>
+            <a href="#leadership" class="block py-2 font-semibold text-gray-800 hover:text-[#991B1B]" onclick="closeMobileMenu()">Leadership</a>
+            <a href="#contact" class="block py-2 font-semibold text-gray-800 hover:text-[#991B1B]" onclick="closeMobileMenu()">Contact Us</a>
+            <div class="pt-2">
+                <button onclick="closeMobileMenu(); openBookingModal('Mobile Navigation Enquiry')" class="w-full py-3 rounded-lg bg-[#8B0000] text-white font-bold text-sm uppercase tracking-wider">
+                    Book Classes Directly
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ========================================================= -->
+    <!-- 3. HERO 3-PANEL HORIZONTAL CAROUSEL SLIDER                -->
+    <!-- ========================================================= -->
+    <section id="home" class="relative bg-white pt-5 pb-8 select-none">
+        <div class="relative max-w-[1440px] mx-auto px-3 sm:px-6 overflow-hidden">
+            
+            <!-- Left Red Circular Arrow -->
+            <button id="prevSlideBtn" aria-label="Previous Slide"
+                class="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 z-20 w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-[#D32F2F] hover:bg-[#991B1B] text-white shadow-lg flex items-center justify-center transition transform hover:scale-105 cursor-pointer">
+                <i class="fa-solid fa-chevron-left text-sm sm:text-base"></i>
+            </button>
+
+            <!-- Right Red Circular Arrow -->
+            <button id="nextSlideBtn" aria-label="Next Slide"
+                class="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 z-20 w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-[#D32F2F] hover:bg-[#991B1B] text-white shadow-lg flex items-center justify-center transition transform hover:scale-105 cursor-pointer">
+                <i class="fa-solid fa-chevron-right text-sm sm:text-base"></i>
+            </button>
+
+            <!-- Carousel Viewport -->
+            <div class="overflow-hidden rounded-xl">
+                <div id="carouselTrack" class="carousel-track flex gap-4 sm:gap-5">
+                    <!-- Slides injected cleanly via JS for seamless responsive 1/2/3 panel display -->
+                </div>
+            </div>
+
+            <!-- Pagination Dots Below Carousel -->
+            <div id="carouselDots" class="flex justify-center items-center gap-2 mt-5">
+                <!-- Dots populated via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- 4. ABOUT SECTION                                          -->
+    <!-- ========================================================= -->
+    <section id="about" class="relative py-12 sm:py-16 bg-white overflow-hidden">
+        <!-- Subtle decorative dotted patterns matching the video -->
+        <div class="hidden lg:block absolute right-10 top-12 w-36 h-36 dotted-accent opacity-60 pointer-events-none"></div>
+
+        <div class="max-w-[1260px] mx-auto px-4 sm:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+                
+                <!-- Left Column (~58% width -> 7 cols) -->
+                <div class="lg:col-span-7 space-y-5">
+                    <p class="text-sm sm:text-[15px] font-semibold text-gray-600 tracking-wide">
+                        About American Institute of English Language PVT. LTD.
+                    </p>
+                    
+                    <h1 class="text-2xl sm:text-3xl lg:text-[34px] font-extrabold text-gray-900 leading-[1.22]">
+                        Leading Spoken English &amp; Personality Development Institute In Lucknow
+                    </h1>
+                    
+                    <h2 class="text-base sm:text-[17px] font-bold text-gray-800">
+                        Empowering Confident English Speakers Through Practical Learning
+                    </h2>
+                    
+                    <p class="text-[15px] sm:text-[15.5px] text-gray-700 leading-relaxed">
+                        <strong class="font-bold text-gray-900">American Institute of English Language PVT. LTD.</strong> is one of Lucknow's leading institutes for Spoken English, Personality Development, Interview Preparation, Public Speaking, IELTS, TOEFL, PTE and Corporate Communication Training. We believe that English is not just a language—it's the foundation of confidence, career growth and global opportunities.
+                    </p>
+                    
+                    <p class="text-[15px] sm:text-[15.5px] text-gray-700 leading-relaxed">
+                        Our unique <strong class="font-bold text-gray-900">"Learning by Doing"</strong> methodology focuses on practical communication rather than memorization. Through interactive group discussions, public speaking activities, audio-visual sessions, vocabulary enhancement, mock interviews and real-life conversation practice, we help students, professionals, homemakers and job seekers speak English fluently and confidently. Our experienced trainers provide personalized guidance to ensure every learner achieves measurable progress in communication skills and personality development.
+                    </p>
+
+                    <!-- Bottom 3-Column Metrics Row -->
+                    <div class="pt-6 grid grid-cols-3 gap-4 sm:gap-8 border-t border-gray-100 max-w-xl">
+                        <!-- Metric 1 -->
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-extrabold text-gray-900">8+</div>
+                            <div class="text-xs sm:text-sm font-medium text-gray-600 mt-1">Years of Experience</div>
+                        </div>
+
+                        <!-- Metric 2 -->
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-extrabold text-gray-900">12k+</div>
+                            <div class="text-xs sm:text-sm font-medium text-gray-600 mt-1">Students Trained</div>
+                        </div>
+
+                        <!-- Metric 3: Google Rating -->
+                        <div>
+                            <div class="flex items-center font-extrabold text-xl sm:text-2xl tracking-tight leading-none">
+                                <span class="text-[#4285F4]">G</span>
+                                <span class="text-[#EA4335]">o</span>
+                                <span class="text-[#FBBC05]">o</span>
+                                <span class="text-[#4285F4]">g</span>
+                                <span class="text-[#34A853]">l</span>
+                                <span class="text-[#EA4335]">e</span>
+                            </div>
+                            <div class="flex items-center text-amber-400 text-[11px] sm:text-xs my-1 space-x-0.5">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="text-xs sm:text-sm font-semibold text-gray-700">Rated 4.9/5 Stars</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column (~42% width -> 5 cols): Group Classroom Photo -->
+                <div class="lg:col-span-5">
+                    <div class="relative rounded-2xl overflow-hidden shadow-[0_14px_35px_rgba(0,0,0,0.12)] border border-gray-100">
+                        <img 
+                            src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=900&q=85" 
+                            onerror="this.src='https://placehold.co/800x650/991B1B/FFFFFF?text=AIEL+Lucknow+Students+Batch'"
+                            alt="American Institute of English Language PVT. LTD. Students and Trainers Group Photo" 
+                            class="w-full h-[380px] sm:h-[450px] object-cover"
+                        >
+                        <!-- Subtle Institute Tag Badge on Bottom Corner -->
+                        <div class="absolute bottom-3 left-3 right-3 bg-white/95 backdrop-blur-sm px-4 py-2.5 rounded-xl shadow flex items-center justify-between">
+                            <div>
+                                <p class="text-xs font-extrabold text-gray-900">American Institute of English Language PVT. LTD.</p>
+                                <p class="text-[11px] text-gray-600">Balaganj Campus • Lucknow</p>
+                            </div>
+                            <span class="px-2.5 py-1 rounded-md bg-red-50 text-[#991B1B] text-[11px] font-bold">
+                                Practical Batches
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- 5. DARK SLATE/CHARCOAL BATCH ANNOUNCEMENT BANNER          -->
+    <!-- ========================================================= -->
+    <section id="admission-process" class="bg-[#5A5D62] text-white py-10 sm:py-12 px-4 sm:px-8">
+        <div class="max-w-[1260px] mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+            <div class="space-y-2">
+                <h2 class="text-xl sm:text-2xl lg:text-[26px] font-extrabold tracking-wide uppercase">
+                    NEXT BATCH STARTING FROM THIS MONDAY
+                </h2>
+                <p class="text-sm sm:text-[15.5px] text-gray-100 font-medium">
+                    Morning: 8:00 AM – 9:30 AM &nbsp;|&nbsp; Afternoon: 10:00 AM – 11:30 AM &nbsp;|&nbsp; Evening: 5:30 PM – 7:00 PM
+                </p>
+                <p class="text-xs sm:text-sm text-gray-200 font-medium">
+                    Limited seats available • Free Demo &amp; Level Assessment at Balaganj Center
+                </p>
+            </div>
+
+            <div class="flex-shrink-0">
+                <button onclick="openBookingModal('Next Batch Seat Reservation')"
+                    class="bg-white hover:bg-gray-100 text-gray-900 font-extrabold text-xs sm:text-sm uppercase tracking-wider px-8 py-4 rounded shadow-md transition transform hover:-translate-y-0.5 cursor-pointer">
+                    BOOK YOUR SEAT
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- 6. WHY LEARN WITH AMERICAN INSTITUTE (2-COL ASYMMETRIC)   -->
+    <!-- ========================================================= -->
+    <section id="why-learn" class="relative py-16 sm:py-20 bg-white overflow-hidden">
+        <!-- Subtle dotted decoration -->
+        <div class="hidden lg:block absolute left-1/2 top-24 w-32 h-32 dotted-accent opacity-50 pointer-events-none"></div>
+
+        <div class="max-w-[1260px] mx-auto px-4 sm:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-start">
+                
+                <!-- Left Column (6 cols) -->
+                <div class="lg:col-span-6 space-y-5">
+                    <p class="text-sm font-semibold text-gray-600">
+                        Why Learn With American Institute of English Language PVT. LTD.
+                    </p>
+                    <h2 class="text-2xl sm:text-3xl lg:text-[34px] font-extrabold text-gray-900 leading-[1.22]">
+                        Build English Fluency, Confidence &amp; Communication Skills
+                    </h2>
+
+                    <div class="rounded-2xl overflow-hidden shadow-md border border-gray-100 my-4">
+                        <img 
+                            src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=900&q=85" 
+                            onerror="this.src='https://placehold.co/800x500/8B0000/FFFFFF?text=Interactive+English+Session'"
+                            alt="Interactive Spoken English Classroom Activity" 
+                            class="w-full h-[260px] sm:h-[310px] object-cover"
+                        >
+                    </div>
+
+                    <p class="text-[15px] text-gray-700 leading-relaxed">
+                        At American Institute of English Language PVT. LTD., we help students, professionals, job seekers and homemakers improve their English communication skills through practical and interactive learning. Our focus is not on memorising English rules, but on helping you use English confidently in real-life conversations, interviews, presentations and professional situations.
+                    </p>
+
+                    <div class="pt-2">
+                        <button onclick="openBookingModal('Join Us - Course Enquiry')"
+                            class="inline-flex items-center gap-2.5 bg-[#F5B800] hover:bg-[#e0a800] text-gray-900 font-bold text-sm sm:text-[15px] px-7 py-3 rounded-lg shadow-sm transition transform hover:-translate-y-0.5 cursor-pointer">
+                            <span>Join Us</span>
+                            <span class="w-5 h-5 rounded-full bg-gray-900 text-[#F5B800] flex items-center justify-center text-[11px]">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Right Column (6 cols): 3 Vertical Feature Cards -->
+                <div class="lg:col-span-6 lg:pt-12 space-y-8">
+                    <!-- Feature Item 1 -->
+                    <div class="flex items-start gap-5 p-4 rounded-xl hover:bg-gray-50/80 transition">
+                        <div class="w-16 h-16 rounded-full bg-amber-50 border border-amber-100 flex items-center justify-center flex-shrink-0 shadow-sm">
+                            <i class="fa-solid fa-book-open-reader text-2xl text-[#8B0000]"></i>
+                        </div>
+                        <div class="space-y-1.5">
+                            <h3 class="text-lg sm:text-[19px] font-bold text-gray-900">
+                                Learn English Through Real-Life Practice
+                            </h3>
+                            <p class="text-sm sm:text-[15px] text-gray-600 leading-relaxed">
+                                Improve your speaking, listening, vocabulary and everyday communication through conversations, group discussions, activities and practical English exercises.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Feature Item 2 -->
+                    <div class="flex items-start gap-5 p-4 rounded-xl hover:bg-gray-50/80 transition">
+                        <div class="w-16 h-16 rounded-full bg-amber-50 border border-amber-100 flex items-center justify-center flex-shrink-0 shadow-sm">
+                            <i class="fa-solid fa-graduation-cap text-2xl text-[#D97706]"></i>
+                        </div>
+                        <div class="space-y-1.5">
+                            <h3 class="text-lg sm:text-[19px] font-bold text-gray-900">
+                                Develop Confidence &amp; Personality
+                            </h3>
+                            <p class="text-sm sm:text-[15px] text-gray-600 leading-relaxed">
+                                Build confidence, presentation skills, body language and interpersonal communication so you can express yourself clearly in academic, professional and social situations.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Feature Item 3 -->
+                    <div class="flex items-start gap-5 p-4 rounded-xl hover:bg-gray-50/80 transition">
+                        <div class="w-16 h-16 rounded-full bg-red-50 border border-red-100 flex items-center justify-center flex-shrink-0 shadow-sm">
+                            <i class="fa-solid fa-user-tie text-2xl text-gray-900"></i>
+                        </div>
+                        <div class="space-y-1.5">
+                            <h3 class="text-lg sm:text-[19px] font-bold text-gray-900">
+                                Prepare For Interviews &amp; Career Opportunities
+                            </h3>
+                            <p class="text-sm sm:text-[15px] text-gray-600 leading-relaxed">
+                                Strengthen your interview communication, public speaking and professional English skills with mock interviews, speaking activities and guided practice.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- 7. WHAT YOU LEARN? (2x2 PROMOTIONAL POSTER GRID)          -->
+    <!-- ========================================================= -->
+    <section id="what-you-learn" class="py-12 sm:py-16 bg-white">
+        <div class="max-w-[1260px] mx-auto px-4 sm:px-8">
+            <!-- Section Header -->
+            <div class="max-w-4xl mb-10 space-y-3">
+                <h2 class="text-2xl sm:text-3xl lg:text-[34px] font-extrabold text-gray-900">
+                    What You Learn?
+                </h2>
+                <p class="text-[15px] sm:text-[16px] text-gray-700 leading-relaxed">
+                    Develop essential life skills through personality development, interview preparation, speech and debate competitions and public speaking activities. At American Institute of English Language PVT. LTD., students build confidence, improve communication, enhance critical thinking and develop leadership qualities to express themselves effectively and succeed in academic, professional and personal environments.
+                </p>
+            </div>
+
+            <!-- 2x2 Poster Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
+
+                <!-- ===================================== -->
+                <!-- POSTER 1: PERSONALITY DEVELOPMENT     -->
+                <!-- ===================================== -->
+                <div class="group">
+                    <div class="poster-card rounded-xl overflow-hidden border border-gray-200 bg-white flex flex-col">
+                        <!-- Top Poster Banner Header -->
+                        <div class="px-5 pt-5 pb-3 bg-gradient-to-b from-gray-50 to-white">
+                            <div class="flex items-start gap-3">
+                                <!-- Red Crest Emblem -->
+                                <div class="w-12 h-14 bg-[#991B1B] rounded-b-xl flex flex-col items-center justify-center text-white flex-shrink-0 shadow">
+                                    <span class="text-base font-black leading-none">AI</span>
+                                    <span class="text-[8px] font-bold tracking-widest mt-0.5">EL</span>
+                                </div>
+                                <div>
+                                    <h3 class="text-2xl sm:text-[28px] font-black text-gray-900 leading-none tracking-tight uppercase">
+                                        PERSONALITY
+                                    </h3>
+                                    <h4 class="text-xl sm:text-[25px] font-black text-[#B71C1C] leading-tight tracking-tight uppercase">
+                                        DEVELOPMENT
+                                    </h4>
+                                    <p class="text-xs sm:text-[13px] font-bold text-gray-700 mt-1">
+                                        Build Confidence &nbsp;•&nbsp; Communication &nbsp;•&nbsp; Leadership
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Center Classroom Photo with Brand Watermark -->
+                        <div class="relative h-60 sm:h-64 overflow-hidden">
+                            <img 
+                                src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=900&q=85" 
+                                onerror="this.src='https://placehold.co/800x450/991B1B/FFFFFF?text=Personality+Development+Class'"
+                                alt="Personality Development Training" 
+                                class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                            >
+                            <div class="absolute bottom-2 right-2 bg-white/90 px-2.5 py-1 rounded text-[10px] font-extrabold text-[#991B1B] shadow">
+                                AMERICAN INSTITUTE OF ENGLISH LANGUAGE PVT. LTD.
+                            </div>
+                        </div>
+
+                        <!-- Bottom Red Ribbon with 4 Circular Badges -->
+                        <div class="bg-gradient-to-r from-[#8B0000] via-[#B71C1C] to-[#8B0000] text-white px-4 py-4">
+                            <div class="grid grid-cols-4 gap-2 text-center">
+                                <div class="flex flex-col items-center">
+                                    <div class="w-10 h-10 rounded-full bg-white text-[#991B1B] flex items-center justify-center shadow mb-1.5">
+                                        <i class="fa-solid fa-user-check text-sm"></i>
+                                    </div>
+                                    <span class="text-[10px] sm:text-[11px] font-bold leading-tight">Confidence<br>Building</span>
+                                </div>
+                                <div class="flex flex-col items-center">
+                                    <div class="w-10 h-10 rounded-full bg-white text-[#991B1B] flex items-center justify-center shadow mb-1.5">
+                                        <i class="fa-solid fa-comments text-sm"></i>
+                                    </div>
+                                    <span class="text-[10px] sm:text-[11px] font-bold leading-tight">Communication<br>Skills</span>
+                                </div>
+                                <div class="flex flex-col items-center">
+                                    <div class="w-10 h-10 rounded-full bg-white text-[#991B1B] flex items-center justify-center shadow mb-1.5">
+                                        <i class="fa-solid fa-face-smile text-sm"></i>
+                                    </div>
+                                    <span class="text-[10px] sm:text-[11px] font-bold leading-tight">Positive<br>Attitude</span>
+                                </div>
+                                <div class="flex flex-col items-center">
+                                    <div class="w-10 h-10 rounded-full bg-white text-[#991B1B] flex items-center justify-center shadow mb-1.5">
+                                        <i class="fa-solid fa-chess-king text-sm"></i>
+                                    </div>
+                                    <span class="text-[10px] sm:text-[11px] font-bold leading-tight">Leadership<br>Skills</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Caption Below Card -->
+                    <div class="mt-4 space-y-1">
+                        <h3 class="text-lg font-extrabold text-gray-900">Personality Development</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            Develop your communication skills, positive attitude, body language and interpersonal abilities to build a confident and professional personality.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- ===================================== -->
+                <!-- POSTER 2: INTERVIEW PREPARATION       -->
+                <!-- ===================================== -->
+                <div class="group">
+                    <div class="poster-card rounded-xl overflow-hidden border border-gray-200 bg-white flex flex-col">
+                        <!-- Top Poster Banner Header -->
+                        <div class="px-5 pt-5 pb-3 bg-gradient-to-b from-gray-50 to-white">
+                            <div class="flex items-start gap-3">
+                                <div class="w-12 h-14 bg-[#991B1B] rounded-b-xl flex flex-col items-center justify-center text-white flex-shrink-0 shadow">
+                                    <span class="text-base font-black leading-none">AI</span>
+                                    <span class="text-[8px] font-bold tracking-widest mt-0.5">EL</span>
+                                </div>
+                                <div>
+                                    <h3 class="text-2xl sm:text-[28px] font-black text-[#B71C1C] leading-none tracking-tight">
+                                        Interview
+                                    </h3>
+                                    <h4 class="text-xl sm:text-[25px] font-black text-gray-900 leading-tight tracking-tight">
+                                        Preparation
+                                    </h4>
+                                    <p class="text-xs sm:text-[13px] font-semibold text-gray-700 mt-1">
+                                        Build confidence, improve communication and make a strong first impression.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Center Mock Interview Photo -->
+                        <div class="relative h-60 sm:h-64 overflow-hidden">
+                            <img 
+                                src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=900&q=85" 
+                                onerror="this.src='https://placehold.co/800x450/991B1B/FFFFFF?text=Mock+Interview+Preparation'"
+                                alt="Mock Interview Training" 
+                                class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                            >
+                            <div class="absolute bottom-2 right-2 bg-white/90 px-2.5 py-1 rounded text-[10px] font-extrabold text-[#991B1B] shadow">
+                                AMERICAN INSTITUTE OF ENGLISH LANGUAGE PVT. LTD.
+                            </div>
+                        </div>
+
+                        <!-- Bottom Red Ribbon with 5 Circular Badges -->
+                        <div class="bg-gradient-to-r from-[#8B0000] via-[#B71C1C] to-[#8B0000] text-white px-3 py-4">
+                            <div class="grid grid-cols-5 gap-1.5 text-center">
+                                <div class="flex flex-col items-center">
+                                    <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-white text-[#991B1B] flex items-center justify-center shadow mb-1.5">
+                                        <i class="fa-solid fa-handshake text-xs sm:text-sm"></i>
+                                    </div>
+                                    <span class="text-[9px] sm:text-[10px] font-bold leading-tight">Mock<br>Interviews</span>
+                                </div>
+                                <div class="flex flex-col items-center">
+                                    <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-white text-[#991B1B] flex items-center justify-center shadow mb-1.5">
+                                        <i class="fa-solid fa-file-lines text-xs sm:text-sm"></i>
+                                    </div>
+                                    <span class="text-[9px] sm:text-[10px] font-bold leading-tight">Resume<br>Guidance</span>
+                                </div>
+                                <div class="flex flex-col items-center">
+                                    <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-white text-[#991B1B] flex items-center justify-center shadow mb-1.5">
+                                        <i class="fa-solid fa-comments text-xs sm:text-sm"></i>
+                                    </div>
+                                    <span class="text-[9px] sm:text-[10px] font-bold leading-tight">Communication<br>Skills</span>
+                                </div>
+                                <div class="flex flex-col items-center">
+                                    <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-white text-[#991B1B] flex items-center justify-center shadow mb-1.5">
+                                        <i class="fa-solid fa-bolt text-xs sm:text-sm"></i>
+                                    </div>
+                                    <span class="text-[9px] sm:text-[10px] font-bold leading-tight">Confidence<br>Building</span>
+                                </div>
+                                <div class="flex flex-col items-center">
+                                    <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-white text-[#991B1B] flex items-center justify-center shadow mb-1.5">
+                                        <i class="fa-solid fa-user-tie text-xs sm:text-sm"></i>
+                                    </div>
+                                    <span class="text-[9px] sm:text-[10px] font-bold leading-tight">Personal<br>Presentation</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Caption Below Card -->
+                    <div class="mt-4 space-y-1">
+                        <h3 class="text-lg font-extrabold text-gray-900">Interview Preparation</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            Prepare for interviews with effective communication techniques, commonly asked questions, mock interviews and tips to make a strong first impression.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- ======================================== -->
+                <!-- POSTER 3: SPEECH & DEBATE COMPETITIONS   -->
+                <!-- ======================================== -->
+                <div class="group">
+                    <div class="poster-card rounded-xl overflow-hidden border border-gray-200 bg-white flex flex-col">
+                        <!-- Top Poster Banner Header -->
+                        <div class="px-5 pt-5 pb-3 bg-gradient-to-b from-gray-50 to-white">
+                            <div class="flex items-start gap-3">
+                                <div class="w-12 h-14 bg-[#991B1B] rounded-b-xl flex flex-col items-center justify-center text-white flex-shrink-0 shadow">
+                                    <span class="text-base font-black leading-none">AI</span>
+                                    <span class="text-[8px] font-bold tracking-widest mt-0.5">EL</span>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl sm:text-[26px] font-black text-[#B71C1C] leading-none tracking-tight uppercase">
+                                        SPEECH &amp; DEBATE
+                                    </h3>
+                                    <h4 class="text-xl sm:text-[24px] font-black text-gray-900 leading-tight tracking-tight uppercase">
+                                        COMPETITIONS
+                                    </h4>
+                                    <p class="text-xs sm:text-[13px] font-bold text-gray-700 mt-1">
+                                        Express &nbsp;|&nbsp; Think &nbsp;|&nbsp; Argue &nbsp;|&nbsp; Grow
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Center Debate Classroom Photo with Quote Callout -->
+                        <div class="relative h-60 sm:h-64 overflow-hidden">
+                            <img 
+                                src="https://images.unsplash.com/photo-1544531586-fde5298cdd40?auto=format&fit=crop&w=900&q=85" 
+                                onerror="this.src='https://placehold.co/800x450/991B1B/FFFFFF?text=Speech+and+Debate+Session'"
+                                alt="Speech and Debate Competition" 
+                                class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                            >
+                            <!-- Quote Overlay Badge matching recording -->
+                            <div class="absolute top-3 left-3 bg-white/95 backdrop-blur-sm p-2.5 rounded-lg shadow-md max-w-[165px] border-l-4 border-[#B71C1C]">
+                                <p class="text-[10px] font-bold text-gray-800 leading-snug">
+                                    “A platform where students build confidence and make their voice count.”
+                                </p>
+                            </div>
+                            <div class="absolute top-3 right-3 bg-[#8B0000] text-white px-2.5 py-1 rounded text-[10px] font-extrabold shadow">
+                                Speak Today • Lead Tomorrow
+                            </div>
+                        </div>
+
+                        <!-- Bottom Red Ribbon with 4 Circular Badges -->
+                        <div class="bg-gradient-to-r from-[#8B0000] via-[#B71C1C] to-[#8B0000] text-white px-4 py-4">
+                            <div class="grid grid-cols-4 gap-2 text-center">
+                                <div class="flex flex-col items-center">
+                                    <div class="w-10 h-10 rounded-full bg-white text-[#991B1B] flex items-center justify-center shadow mb-1.5">
+                                        <i class="fa-solid fa-brain text-sm"></i>
+                                    </div>
+                                    <span class="text-[10px] sm:text-[11px] font-bold leading-tight">Critical<br>Thinking</span>
+                                </div>
+                                <div class="flex flex-col items-center">
+                                    <div class="w-10 h-10 rounded-full bg-white text-[#991B1B] flex items-center justify-center shadow mb-1.5">
+                                        <i class="fa-solid fa-bullhorn text-sm"></i>
+                                    </div>
+                                    <span class="text-[10px] sm:text-[11px] font-bold leading-tight">Effective<br>Communication</span>
+                                </div>
+                                <div class="flex flex-col items-center">
+                                    <div class="w-10 h-10 rounded-full bg-white text-[#991B1B] flex items-center justify-center shadow mb-1.5">
+                                        <i class="fa-solid fa-shield-halved text-sm"></i>
+                                    </div>
+                                    <span class="text-[10px] sm:text-[11px] font-bold leading-tight">Confidence<br>Building</span>
+                                </div>
+                                <div class="flex flex-col items-center">
+                                    <div class="w-10 h-10 rounded-full bg-white text-[#991B1B] flex items-center justify-center shadow mb-1.5">
+                                        <i class="fa-solid fa-award text-sm"></i>
+                                    </div>
+                                    <span class="text-[10px] sm:text-[11px] font-bold leading-tight">Leadership<br>Skills</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Caption Below Card -->
+                    <div class="mt-4 space-y-1">
+                        <h3 class="text-lg font-extrabold text-gray-900">Speech &amp; Debate Competitions</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            Participate in interactive group discussions, extempore speeches, and structured debates to sharpen logical thinking and fluent expression.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- ======================================== -->
+                <!-- POSTER 4: PUBLIC SPEAKING ACTIVITIES     -->
+                <!-- ======================================== -->
+                <div class="group">
+                    <div class="poster-card rounded-xl overflow-hidden border border-gray-200 bg-white flex flex-col">
+                        <!-- Top Poster Banner Header -->
+                        <div class="px-5 pt-5 pb-3 bg-gradient-to-b from-gray-50 to-white">
+                            <div class="flex items-start gap-3">
+                                <div class="w-12 h-14 bg-[#991B1B] rounded-b-xl flex flex-col items-center justify-center text-white flex-shrink-0 shadow">
+                                    <span class="text-base font-black leading-none">AI</span>
+                                    <span class="text-[8px] font-bold tracking-widest mt-0.5">EL</span>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl sm:text-[26px] font-black text-[#B71C1C] leading-none tracking-tight uppercase">
+                                        PUBLIC SPEAKING
+                                    </h3>
+                                    <h4 class="text-xl sm:text-[24px] font-black text-gray-900 leading-tight tracking-tight uppercase">
+                                        ACTIVITIES
+                                    </h4>
+                                    <p class="text-xs sm:text-[13px] font-bold text-gray-700 mt-1">
+                                        Speak &nbsp;|&nbsp; Present &nbsp;|&nbsp; Gain Confidence &nbsp;|&nbsp; Grow
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Center Podium Presentation Photo with Quote Callout -->
+                        <div class="relative h-60 sm:h-64 overflow-hidden">
+                            <img 
+                                src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&w=900&q=85" 
+                                onerror="this.src='https://placehold.co/800x450/991B1B/FFFFFF?text=Public+Speaking+Activities'"
+                                alt="Public Speaking Podium Presentation" 
+                                class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                            >
+                            <!-- Quote Overlay Badge matching recording -->
+                            <div class="absolute top-3 left-3 bg-white/95 backdrop-blur-sm p-2.5 rounded-lg shadow-md max-w-[175px] border-l-4 border-[#B71C1C]">
+                                <p class="text-[10px] font-bold text-gray-800 leading-snug">
+                                    “Overcome stage fear and express yourself with confidence.”
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Bottom Red Ribbon with 4 Circular Badges -->
+                        <div class="bg-gradient-to-r from-[#8B0000] via-[#B71C1C] to-[#8B0000] text-white px-4 py-4">
+                            <div class="grid grid-cols-4 gap-2 text-center">
+                                <div class="flex flex-col items-center">
+                                    <div class="w-10 h-10 rounded-full bg-white text-[#991B1B] flex items-center justify-center shadow mb-1.5">
+                                        <i class="fa-solid fa-microphone-lines text-sm"></i>
+                                    </div>
+                                    <span class="text-[10px] sm:text-[11px] font-bold leading-tight">Build<br>Confidence</span>
+                                </div>
+                                <div class="flex flex-col items-center">
+                                    <div class="w-10 h-10 rounded-full bg-white text-[#991B1B] flex items-center justify-center shadow mb-1.5">
+                                        <i class="fa-solid fa-comment-dots text-sm"></i>
+                                    </div>
+                                    <span class="text-[10px] sm:text-[11px] font-bold leading-tight">Improve<br>Communication</span>
+                                </div>
+                                <div class="flex flex-col items-center">
+                                    <div class="w-10 h-10 rounded-full bg-white text-[#991B1B] flex items-center justify-center shadow mb-1.5">
+                                        <i class="fa-solid fa-person-rays text-sm"></i>
+                                    </div>
+                                    <span class="text-[10px] sm:text-[11px] font-bold leading-tight">Overcome<br>Stage Fear</span>
+                                </div>
+                                <div class="flex flex-col items-center">
+                                    <div class="w-10 h-10 rounded-full bg-white text-[#991B1B] flex items-center justify-center shadow mb-1.5">
+                                        <i class="fa-solid fa-chalkboard-user text-sm"></i>
+                                    </div>
+                                    <span class="text-[10px] sm:text-[11px] font-bold leading-tight">Develop Presentation<br>Skills</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Caption Below Card -->
+                    <div class="mt-4 space-y-1">
+                        <h3 class="text-lg font-extrabold text-gray-900">Public Speaking Activities</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            Daily podium sessions, storytelling, role-plays, and audience interaction drills designed to eliminate stage hesitation permanently.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- 8. OFFERED COURSES & DIRECT ENQUIRY SECTION               -->
+    <!-- ========================================================= -->
+    <section id="courses" class="py-16 bg-gray-50 border-t border-gray-200/80">
+        <div class="max-w-[1260px] mx-auto px-4 sm:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
+                <div>
+                    <p class="text-sm font-bold text-[#991B1B] uppercase tracking-wider">Programs &amp; Curriculum</p>
+                    <h2 class="text-2xl sm:text-3xl font-extrabold text-gray-900 mt-1">
+                        Offered Courses at American Institute of English Language PVT. LTD.
+                    </h2>
+                </div>
+                <button onclick="openBookingModal('Course Syllabus & Fee Enquiry')"
+                    class="self-start md:self-auto bg-[#8B0000] hover:bg-red-900 text-white font-bold text-sm px-6 py-3 rounded-lg shadow transition cursor-pointer">
+                    Download Brochure / Enquire
+                </button>
+            </div>
+
+            <!-- 4 Clean Course Cards -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white rounded-xl p-6 border border-gray-200/90 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+                    <div>
+                        <span class="inline-block px-3 py-1 rounded-full bg-red-50 text-[#991B1B] text-xs font-bold mb-3">Foundation &amp; Fluency</span>
+                        <h3 class="text-lg font-extrabold text-gray-900 mb-2">Spoken English Mastery</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            From sentence framing and functional grammar to fluent daily conversations, pronunciation, and active vocabulary.
+                        </p>
+                    </div>
+                    <button onclick="openBookingModal('Spoken English Mastery')" class="mt-5 text-sm font-bold text-[#991B1B] hover:underline flex items-center gap-1.5 cursor-pointer">
+                        Book Classes Directly <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </button>
+                </div>
+
+                <div class="bg-white rounded-xl p-6 border border-gray-200/90 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+                    <div>
+                        <span class="inline-block px-3 py-1 rounded-full bg-amber-50 text-amber-800 text-xs font-bold mb-3">Soft Skills</span>
+                        <h3 class="text-lg font-extrabold text-gray-900 mb-2">Personality Development</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            Body language, executive grooming, leadership mindset, emotional intelligence, and social etiquette training.
+                        </p>
+                    </div>
+                    <button onclick="openBookingModal('Personality Development')" class="mt-5 text-sm font-bold text-[#991B1B] hover:underline flex items-center gap-1.5 cursor-pointer">
+                        Book Classes Directly <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </button>
+                </div>
+
+                <div class="bg-white rounded-xl p-6 border border-gray-200/90 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+                    <div>
+                        <span class="inline-block px-3 py-1 rounded-full bg-red-50 text-[#991B1B] text-xs font-bold mb-3">Career Readiness</span>
+                        <h3 class="text-lg font-extrabold text-gray-900 mb-2">Interview &amp; GD Prep</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            One-on-one HR &amp; technical mock interviews, group discussion strategies, resume building, and corporate emails.
+                        </p>
+                    </div>
+                    <button onclick="openBookingModal('Interview & GD Prep')" class="mt-5 text-sm font-bold text-[#991B1B] hover:underline flex items-center gap-1.5 cursor-pointer">
+                        Book Classes Directly <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </button>
+                </div>
+
+                <div class="bg-white rounded-xl p-6 border border-gray-200/90 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+                    <div>
+                        <span class="inline-block px-3 py-1 rounded-full bg-amber-50 text-amber-800 text-xs font-bold mb-3">Global Exams</span>
+                        <h3 class="text-lg font-extrabold text-gray-900 mb-2">IELTS, TOEFL &amp; PTE</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            Targeted band-score coaching for Listening, Reading, Writing, and Speaking modules with full-length mock tests.
+                        </p>
+                    </div>
+                    <button onclick="openBookingModal('IELTS, TOEFL & PTE')" class="mt-5 text-sm font-bold text-[#991B1B] hover:underline flex items-center gap-1.5 cursor-pointer">
+                        Book Classes Directly <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- 9. LEADERSHIP & DIRECT CLASS ENQUIRY FORM                 -->
+    <!-- ========================================================= -->
+    <section id="leadership" class="py-16 bg-white border-t border-gray-100">
+        <div class="max-w-[1260px] mx-auto px-4 sm:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+                
+                <!-- Left: Leadership & Balaganj Lucknow Campus Info (6 cols) -->
+                <div class="lg:col-span-6 space-y-6">
+                    <div>
+                        <p class="text-sm font-bold text-[#991B1B] uppercase tracking-wider">Leadership &amp; Legacy</p>
+                        <h2 class="text-2xl sm:text-3xl font-extrabold text-gray-900 mt-1">
+                            Guided by Experienced Academic Visionaries
+                        </h2>
+                        <p class="text-sm sm:text-[15px] text-gray-600 mt-2 leading-relaxed">
+                            American Institute of English Language PVT. LTD. brings structured, result-driven spoken English training directly to students and professionals across Lucknow.
+                        </p>
+                    </div>
+
+                    <!-- Leadership Cards -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="p-5 rounded-xl bg-gray-50 border border-gray-200/80">
+                            <div class="w-11 h-11 rounded-full bg-[#8B0000] text-white font-extrabold flex items-center justify-center text-sm mb-3">
+                                VL
+                            </div>
+                            <h3 class="font-extrabold text-gray-900 text-base">Dr. Vikram P. Lamba</h3>
+                            <p class="text-xs font-bold text-[#991B1B] uppercase tracking-wider mt-0.5">Founder</p>
+                            <p class="text-xs text-gray-600 mt-2 leading-relaxed">
+                                Pioneer in practical English communication pedagogy and nationwide student empowerment programs.
+                            </p>
+                        </div>
+
+                        <div class="p-5 rounded-xl bg-gray-50 border border-gray-200/80">
+                            <div class="w-11 h-11 rounded-full bg-gray-900 text-white font-extrabold flex items-center justify-center text-sm mb-3">
+                                MK
+                            </div>
+                            <h3 class="font-extrabold text-gray-900 text-base">Moin Khan</h3>
+                            <p class="text-xs font-bold text-[#991B1B] uppercase tracking-wider mt-0.5">Managing Director</p>
+                            <p class="text-xs text-gray-600 mt-2 leading-relaxed">
+                                Dedicated mentor leading the Balaganj, Lucknow center with daily stage practice and career coaching.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Branch Address Card -->
+                    <div class="p-5 rounded-xl bg-red-50/60 border border-red-100 space-y-2">
+                        <div class="flex items-center gap-2 text-[#8B0000] font-extrabold text-sm">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Balaganj Branch — Lucknow</span>
+                        </div>
+                        <p class="text-sm text-gray-700">
+                            Hardoi Rd, Tondan Marg, Balaganj, Lucknow, Uttar Pradesh 226003
+                        </p>
+                        <p class="text-sm font-bold text-gray-900">
+                            Help Desk: <a href="tel:+919794161828" class="text-[#991B1B] hover:underline">+91 9794161828</a>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Right: Inline Direct Enquiry Form ("Book Classes Directly") (6 cols) -->
+                <div id="contact" class="lg:col-span-6 bg-white rounded-2xl p-6 sm:p-8 shadow-[0_12px_35px_rgba(0,0,0,0.08)] border border-gray-200">
+                    <div class="mb-6">
+                        <span class="inline-block px-3 py-1 rounded bg-red-50 text-[#8B0000] text-xs font-extrabold uppercase tracking-wider">
+                            Admission &amp; Seat Enquiry
+                        </span>
+                        <h3 class="text-xl sm:text-2xl font-extrabold text-gray-900 mt-2">
+                            Book Classes Directly
+                        </h3>
+                        <p class="text-sm text-gray-600 mt-1">
+                            Fill out the enquiry form below to reserve your seat or schedule a free counselling session at our Balaganj, Lucknow branch.
+                        </p>
+                    </div>
+
+                    <form id="inlineEnquiryForm" onsubmit="handleEnquirySubmit(event, 'inline')" class="space-y-4">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold text-gray-700 uppercase mb-1">Full Name *</label>
+                                <input type="text" required placeholder="Enter your full name"
+                                    class="w-full px-4 py-2.5 rounded-lg border border-gray-300 text-sm focus:outline-none focus:border-[#8B0000]">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-gray-700 uppercase mb-1">Phone / WhatsApp *</label>
+                                <input type="tel" required placeholder="+91 XXXXX XXXXX"
+                                    class="w-full px-4 py-2.5 rounded-lg border border-gray-300 text-sm focus:outline-none focus:border-[#8B0000]">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold text-gray-700 uppercase mb-1">Select Course *</label>
+                                <select required class="w-full px-4 py-2.5 rounded-lg border border-gray-300 text-sm bg-white focus:outline-none focus:border-[#8B0000]">
+                                    <option value="Spoken English Mastery">Spoken English Mastery</option>
+                                    <option value="Personality Development">Personality Development</option>
+                                    <option value="Interview & GD Preparation">Interview &amp; GD Preparation</option>
+                                    <option value="Public Speaking & Debate">Public Speaking &amp; Debate</option>
+                                    <option value="IELTS / TOEFL / PTE">IELTS / TOEFL / PTE</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-gray-700 uppercase mb-1">Preferred Batch Timing</label>
+                                <select class="w-full px-4 py-2.5 rounded-lg border border-gray-300 text-sm bg-white focus:outline-none focus:border-[#8B0000]">
+                                    <option value="Morning (8:00 AM - 9:30 AM)">Morning (8:00 AM – 9:30 AM)</option>
+                                    <option value="Afternoon (10:00 AM - 11:30 AM)">Afternoon (10:00 AM – 11:30 AM)</option>
+                                    <option value="Evening (5:30 PM - 7:00 PM)">Evening (5:30 PM – 7:00 PM)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold text-gray-700 uppercase mb-1">Message / Enquiry Note</label>
+                            <textarea rows="2" placeholder="Any specific goal or question..."
+                                class="w-full px-4 py-2.5 rounded-lg border border-gray-300 text-sm focus:outline-none focus:border-[#8B0000]"></textarea>
+                        </div>
+
+                        <button type="submit"
+                            class="w-full py-3.5 rounded-lg bg-[#8B0000] hover:bg-red-900 text-white font-extrabold text-sm uppercase tracking-wider shadow-md transition cursor-pointer">
+                            Book Classes Directly
+                        </button>
+                    </form>
+
+                    <!-- Inline Confirmation Message -->
+                    <div id="inlineSuccessMsg" class="hidden mt-4 p-4 rounded-xl bg-green-50 border border-green-200 text-green-800 text-sm font-medium">
+                        <i class="fa-solid fa-circle-check text-green-600 mr-1.5"></i>
+                        Thank you! Your class booking enquiry for <strong>American Institute of English Language PVT. LTD.</strong> has been received. Our Balaganj counselor will call you shortly.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- 10. FOOTER                                                -->
+    <!-- ========================================================= -->
+    <footer class="bg-gray-900 text-gray-300 pt-14 pb-8 border-t-4 border-[#8B0000]">
+        <div class="max-w-[1260px] mx-auto px-4 sm:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-10 border-b border-gray-800">
+                
+                <!-- Brand Col -->
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-lg bg-[#8B0000] text-white font-black flex items-center justify-center text-sm shadow">
+                            AIEL
+                        </div>
+                        <div>
+                            <h4 class="text-white font-extrabold text-sm leading-tight">
+                                American Institute of English Language PVT. LTD.
+                            </h4>
+                            <p class="text-[11px] text-amber-400 font-semibold">Lucknow • India</p>
+                        </div>
+                    </div>
+                    <p class="text-xs text-gray-400 leading-relaxed">
+                        Empowering students, job seekers, homemakers, and working professionals in Lucknow with practical Spoken English, Personality Development, and Public Speaking mastery.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-4">Quick Links</h4>
+                    <ul class="space-y-2.5 text-xs sm:text-sm">
+                        <li><a href="#home" class="hover:text-white transition">Home</a></li>
+                        <li><a href="#about" class="hover:text-white transition">About Institute</a></li>
+                        <li><a href="#why-learn" class="hover:text-white transition">Why Learn With Us</a></li>
+                        <li><a href="#what-you-learn" class="hover:text-white transition">What You Learn</a></li>
+                        <li><a href="#courses" class="hover:text-white transition">Offered Courses</a></li>
+                    </ul>
+                </div>
+
+                <!-- Programs -->
+                <div>
+                    <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-4">Core Programs</h4>
+                    <ul class="space-y-2.5 text-xs sm:text-sm">
+                        <li><a href="#courses" class="hover:text-white transition">Spoken English Classes</a></li>
+                        <li><a href="#courses" class="hover:text-white transition">Personality Development</a></li>
+                        <li><a href="#courses" class="hover:text-white transition">Interview Preparation</a></li>
+                        <li><a href="#courses" class="hover:text-white transition">Public Speaking &amp; Debate</a></li>
+                        <li><a href="#courses" class="hover:text-white transition">IELTS / TOEFL / PTE</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-4">Contact Campus</h4>
+                    <ul class="space-y-3 text-xs sm:text-sm">
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-location-dot text-red-500 mt-1"></i>
+                            <span>Hardoi Rd, Tondan Marg, Balaganj, Lucknow, Uttar Pradesh 226003</span>
+                        </li>
+                        <li class="flex items-center gap-2.5">
+                            <i class="fa-solid fa-phone text-red-500"></i>
+                            <a href="tel:+919794161828" class="hover:text-white font-semibold">+91 9794161828</a>
+                        </li>
+                        <li class="flex items-center gap-2.5">
+                            <i class="fa-solid fa-clock text-red-500"></i>
+                            <span>Mon – Sat: 8:00 AM – 7:30 PM</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="pt-6 flex flex-col sm:flex-row justify-between items-center text-xs text-gray-500 gap-3">
+                <p>&copy; <span id="currentYear"></span> American Institute of English Language PVT. LTD. All Rights Reserved.</p>
+                <p>Balaganj, Lucknow • Spoken English &amp; Personality Development</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========================================================= -->
+    <!-- 11. FLOATING BOTTOM-LEFT WHATSAPP & BOTTOM-RIGHT WIDGET   -->
+    <!-- ========================================================= -->
+    <!-- Bottom-Left Circular WhatsApp Button -->
+    <a href="https://wa.me/919794161828?text=Hello%20American%20Institute%20of%20English%20Language%20PVT.%20LTD.%2C%20I%20want%20to%20enquire%20about%20Spoken%20English%20classes."
+       target="_blank" rel="noopener noreferrer"
+       aria-label="Chat on WhatsApp"
+       class="fixed bottom-5 left-5 z-50 w-14 h-14 rounded-full bg-[#25D366] hover:bg-[#20bd5a] text-white flex items-center justify-center shadow-xl whatsapp-pulse transition-transform hover:scale-105">
+        <i class="fa-brands fa-whatsapp text-3xl"></i>
+    </a>
+
+    <!-- Bottom-Right Circular Chat / Enquiry Widget -->
+    <button onclick="openBookingModal('Quick Enquiry Widget')"
+        aria-label="Open Quick Enquiry"
+        class="fixed bottom-5 right-5 z-50 w-13 h-13 p-3.5 rounded-full bg-gray-900 hover:bg-[#8B0000] text-white shadow-xl flex items-center justify-center transition-transform hover:scale-105 cursor-pointer border-2 border-white">
+        <i class="fa-solid fa-comment-dots text-xl"></i>
+        <span class="absolute -top-1 -right-1 w-3.5 h-3.5 rounded-full bg-[#D32F2F] border-2 border-white"></span>
+    </button>
+
+    <!-- ========================================================= -->
+    <!-- 12. BOOK CLASSES DIRECTLY ENQUIRY MODAL                   -->
+    <!-- ========================================================= -->
+    <div id="bookingModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/60 backdrop-blur-xs p-4">
+        <div class="bg-white rounded-2xl max-w-md w-full overflow-hidden shadow-2xl border border-gray-200 animate-[fadeIn_0.2s_ease-out]">
+            <!-- Modal Header -->
+            <div class="bg-[#8B0000] text-white px-6 py-4 flex items-center justify-between">
+                <div>
+                    <h3 class="font-extrabold text-lg">Book Classes Directly</h3>
+                    <p id="modalSubtitle" class="text-xs text-red-100">American Institute of English Language PVT. LTD.</p>
+                </div>
+                <button onclick="closeBookingModal()" class="text-white/80 hover:text-white text-xl cursor-pointer">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <!-- Modal Body -->
+            <div class="p-6">
+                <form id="modalEnquiryForm" onsubmit="handleEnquirySubmit(event, 'modal')" class="space-y-4">
+                    <div>
+                        <label class="block text-xs font-bold text-gray-700 uppercase mb-1">Student Name *</label>
+                        <input type="text" required placeholder="Enter your full name"
+                            class="w-full px-3.5 py-2.5 rounded-lg border border-gray-300 text-sm focus:outline-none focus:border-[#8B0000]">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-gray-700 uppercase mb-1">Mobile Number *</label>
+                        <input type="tel" required placeholder="+91 9794161828"
+                            class="w-full px-3.5 py-2.5 rounded-lg border border-gray-300 text-sm focus:outline-none focus:border-[#8B0000]">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-gray-700 uppercase mb-1">Course Interested In *</label>
+                        <select id="modalCourseSelect" class="w-full px-3.5 py-2.5 rounded-lg border border-gray-300 text-sm bg-white focus:outline-none focus:border-[#8B0000]">
+                            <option value="Spoken English Mastery">Spoken English Mastery</option>
+                            <option value="Personality Development">Personality Development</option>
+                            <option value="Interview Preparation">Interview Preparation</option>
+                            <option value="Public Speaking & Debate">Public Speaking &amp; Debate</option>
+                            <option value="IELTS / TOEFL / PTE">IELTS / TOEFL / PTE</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-gray-700 uppercase mb-1">Preferred Batch</label>
+                        <select class="w-full px-3.5 py-2.5 rounded-lg border border-gray-300 text-sm bg-white focus:outline-none focus:border-[#8B0000]">
+                            <option value="Morning (8:00 AM - 9:30 AM)">Morning: 8:00 AM – 9:30 AM</option>
+                            <option value="Afternoon (10:00 AM - 11:30 AM)">Afternoon: 10:00 AM – 11:30 AM</option>
+                            <option value="Evening (5:30 PM - 7:00 PM)">Evening: 5:30 PM – 7:00 PM</option>
+                        </select>
+                    </div>
+
+                    <button type="submit"
+                        class="w-full py-3 rounded-lg bg-[#8B0000] hover:bg-red-900 text-white font-extrabold text-sm uppercase tracking-wider shadow transition cursor-pointer">
+                        Confirm Enquiry &amp; Book Seat
+                    </button>
+                </form>
+
+                <div id="modalSuccessMsg" class="hidden text-center py-6 space-y-3">
+                    <div class="w-14 h-14 rounded-full bg-green-100 text-green-600 flex items-center justify-center mx-auto text-2xl">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <h4 class="text-lg font-extrabold text-gray-900">Seat Enquiry Confirmed!</h4>
+                    <p class="text-sm text-gray-600">
+                        Thank you for choosing <strong>American Institute of English Language PVT. LTD.</strong> (Balaganj, Lucknow). Our team will reach out to you shortly.
+                    </p>
+                    <button onclick="closeBookingModal()" class="mt-2 px-6 py-2 rounded-lg bg-gray-900 text-white text-xs font-bold uppercase cursor-pointer">
+                        Done
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================================================= -->
+    <!-- JAVASCRIPT: CAROUSEL SLIDER, MENU & ENQUIRY HANDLERS      -->
+    <!-- ========================================================= -->
+    <script>
+        // Set Current Year in Footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Mobile Navigation Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        function closeMobileMenu() {
+            mobileMenu.classList.add('hidden');
+        }
+
+        // =========================================================
+        // 3-PANEL HERO CAROUSEL DATA & LOGIC
+        // =========================================================
+        const carouselSlides = [
+            {
+                img: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=800&q=85",
+                caption: "Interactive Group Discussion & Fluency Sessions"
+            },
+            {
+                img: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=85",
+                caption: "Confidence & Personality Development Workshops"
+            },
+            {
+                img: "https://images.unsplash.com/photo-1544531586-fde5298cdd40?auto=format&fit=crop&w=800&q=85",
+                caption: "Stage Presentation & Public Speaking Practice"
+            },
+            {
+                img: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=800&q=85",
+                caption: "Corporate Communication & Mock Interview Drills"
+            },
+            {
+                img: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=85",
+                caption: "Batch Graduations & Student Achievements at Lucknow"
+            },
+            {
+                img: "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800&q=85",
+                caption: "Audio-Visual Vocabulary & Pronunciation Labs"
+            },
+            {
+                img: "https://images.unsplash.com/photo-1515187029135-18ee286d815b?auto=format&fit=crop&w=800&q=85",
+                caption: "Debate Competitions & Leadership Seminars"
+            },
+            {
+                img: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=85",
+                caption: "Personalized Mentorship & Career Counselling"
+            }
+        ];
+
+        const track = document.getElementById('carouselTrack');
+        const dotsContainer = document.getElementById('carouselDots');
+        let currentIndex = 0;
+        let autoSlideTimer;
+
+        function getVisibleSlidesCount() {
+            if (window.innerWidth >= 1024) return 3; // 3 panels on desktop matching video
+            if (window.innerWidth >= 640) return 2;  // 2 panels on tablet
+            return 1;                                // 1 panel on mobile
+        }
+
+        function renderCarousel() {
+            const visibleCount = getVisibleSlidesCount();
+            const gapPx = window.innerWidth >= 640 ? 20 : 16;
+            const totalGaps = gapPx * (visibleCount - 1);
+
+            track.innerHTML = carouselSlides.map((slide, idx) => `
+                <div class="flex-shrink-0 rounded-xl overflow-hidden shadow-md border border-gray-200 relative group bg-gray-100"
+                     style="width: calc((100% - ${totalGaps}px) / ${visibleCount});">
+                    <img src="${slide.img}"
+                         onerror="this.src='https://placehold.co/700x520/8B0000/FFFFFF?text=AIEL+Lucknow+Session+${idx+1}'"
+                         alt="${slide.caption}"
+                         class="w-full h-[270px] sm:h-[310px] lg:h-[330px] object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/75 via-black/30 to-transparent p-4">
+                        <span class="inline-block px-2 py-0.5 rounded bg-[#8B0000] text-white text-[10px] font-bold uppercase tracking-wider mb-1">
+                            AIEL Lucknow
+                        </span>
+                        <p class="text-white text-xs sm:text-sm font-semibold line-clamp-1">${slide.caption}</p>
+                    </div>
+                </div>
+            `).join('');
+
+            // Render Pagination Dots
+            const maxIndex = Math.max(0, carouselSlides.length - visibleCount);
+            if (currentIndex > maxIndex) currentIndex = 0;
+
+            dotsContainer.innerHTML = '';
+            for (let i = 0; i <= maxIndex; i++) {
+                const dot = document.createElement('button');
+                dot.ariaLabel = `Go to slide ${i + 1}`;
+                dot.className = `h-2 rounded-full transition-all duration-300 cursor-pointer ${
+                    i === currentIndex ? 'w-5 bg-[#D32F2F]' : 'w-2 bg-gray-300 hover:bg-gray-400'
+                }`;
+                dot.addEventListener('click', () => {
+                    currentIndex = i;
+                    updateCarouselPosition();
+                    resetAutoSlide();
+                });
+                dotsContainer.appendChild(dot);
+            }
+
+            updateCarouselPosition();
+        }
+
+        function updateCarouselPosition() {
+            const visibleCount = getVisibleSlidesCount();
+            const gapPx = window.innerWidth >= 640 ? 20 : 16;
+            const slideWidth = track.children[0] ? track.children[0].offsetWidth : 0;
+            const offset = currentIndex * (slideWidth + gapPx);
+            track.style.transform = `translateX(-${offset}px)`;
+
+            // Update active dot styling
+            Array.from(dotsContainer.children).forEach((dot, idx) => {
+                dot.className = `h-2 rounded-full transition-all duration-300 cursor-pointer ${
+                    idx === currentIndex ? 'w-5 bg-[#D32F2F]' : 'w-2 bg-gray-300 hover:bg-gray-400'
+                }`;
+            });
+        }
+
+        function nextSlide() {
+            const visibleCount = getVisibleSlidesCount();
+            const maxIndex = Math.max(0, carouselSlides.length - visibleCount);
+            currentIndex = currentIndex >= maxIndex ? 0 : currentIndex + 1;
+            updateCarouselPosition();
+        }
+
+        function prevSlide() {
+            const visibleCount = getVisibleSlidesCount();
+            const maxIndex = Math.max(0, carouselSlides.length - visibleCount);
+            currentIndex = currentIndex <= 0 ? maxIndex : currentIndex - 1;
+            updateCarouselPosition();
+        }
+
+        document.getElementById('nextSlideBtn').addEventListener('click', () => {
+            nextSlide();
+            resetAutoSlide();
+        });
+
+        document.getElementById('prevSlideBtn').addEventListener('click', () => {
+            prevSlide();
+            resetAutoSlide();
+        });
+
+        // Touch Swipe Support for Mobile/Tablet
+        let touchStartX = 0;
+        track.addEventListener('touchstart', (e) => {
+            touchStartX = e.changedTouches[0].screenX;
+        }, { passive: true });
+
+        track.addEventListener('touchend', (e) => {
+            const touchEndX = e.changedTouches[0].screenX;
+            if (touchStartX - touchEndX > 45) {
+                nextSlide();
+                resetAutoSlide();
+            } else if (touchEndX - touchStartX > 45) {
+                prevSlide();
+                resetAutoSlide();
+            }
+        }, { passive: true });
+
+        function startAutoSlide() {
+            autoSlideTimer = setInterval(nextSlide, 3800);
+        }
+
+        function resetAutoSlide() {
+            clearInterval(autoSlideTimer);
+            startAutoSlide();
+        }
+
+        window.addEventListener('resize', renderCarousel);
+        renderCarousel();
+        startAutoSlide();
+
+        // =========================================================
+        // BOOK CLASSES DIRECTLY MODAL & ENQUIRY HANDLERS
+        // =========================================================
+        const bookingModal = document.getElementById('bookingModal');
+        const modalSubtitle = document.getElementById('modalSubtitle');
+        const modalEnquiryForm = document.getElementById('modalEnquiryForm');
+        const modalSuccessMsg = document.getElementById('modalSuccessMsg');
+        const modalCourseSelect = document.getElementById('modalCourseSelect');
+
+        function openBookingModal(contextTitle) {
+            modalSubtitle.textContent = contextTitle || 'American Institute of English Language PVT. LTD.';
+            // Pre-select course if matching option exists
+            Array.from(modalCourseSelect.options).forEach(opt => {
+                if (contextTitle && contextTitle.toLowerCase().includes(opt.value.split(' ')[0].toLowerCase())) {
+                    modalCourseSelect.value = opt.value;
+                }
+            });
+            modalEnquiryForm.classList.remove('hidden');
+            modalSuccessMsg.classList.add('hidden');
+            bookingModal.classList.remove('hidden');
+            bookingModal.classList.add('flex');
+        }
+
+        function closeBookingModal() {
+            bookingModal.classList.add('hidden');
+            bookingModal.classList.remove('flex');
+        }
+
+        // Close modal on outside backdrop click
+        bookingModal.addEventListener('click', (e) => {
+            if (e.target === bookingModal) closeBookingModal();
+        });
+
+        function handleEnquirySubmit(event, source) {
+            event.preventDefault();
+            if (source === 'modal') {
+                modalEnquiryForm.classList.add('hidden');
+                modalSuccessMsg.classList.remove('hidden');
+                modalEnquiryForm.reset();
+            } else {
+                const inlineForm = document.getElementById('inlineEnquiryForm');
+                const inlineSuccess = document.getElementById('inlineSuccessMsg');
+                inlineForm.reset();
+                inlineSuccess.classList.remove('hidden');
+                setTimeout(() => {
+                    inlineSuccess.classList.add('hidden');
+                }, 7000);
+            }
+        }
+    </script>
+</body>
+</html>
